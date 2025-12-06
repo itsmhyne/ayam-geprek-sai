@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
+import HeaderWebsite from "@/components/website/header";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/website/AppSidebar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const robotoSans = Inter({
+  variable: "--font-roboto-sans",
   subsets: ["latin"],
+  weight: "500",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Roboto({
+  variable: "--font-space-mono",
   subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -23,12 +28,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${robotoSans.className} ${spaceMono.className} antialiased`}
       >
-        {children}
+        <SidebarProvider>
+          <AppSidebar />
+          <main className="container px-4 xl:px-0">
+            {/* ----- Header Section ----- */}
+            <section>
+              <HeaderWebsite />
+            </section>
+            {/* ----- End Header Section----- */}
+            {/* ----- Content Section----- */}
+            {/* <section>{children}</section> */}
+            {/* ----- End Content Section----- */}
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );
 }
+
+// Author : M. Hamdan Yusuf 😎
