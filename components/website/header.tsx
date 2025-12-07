@@ -21,9 +21,7 @@ export default function HeaderWebsite() {
     <>
       <nav
         className={`py-9 px-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "backdrop-blur-sm bg-black/30 shadow-sm"
-            : "bg-transparent"
+          isScrolled ? "backdrop-blur-sm bg-black shadow-sm" : "bg-transparent"
         }`}
       >
         <div className="container">

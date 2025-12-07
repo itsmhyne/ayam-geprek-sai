@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${robotoSans.className} ${spaceMono.className} ${greatVibes.variable} antialiased`}
+        className={`${robotoSans.className} ${spaceMono.className} ${greatVibes.variable} antialiased bg-black`}
       >
         {/* <SidebarProvider>
           <AppSidebar className="lg:hidden" />
