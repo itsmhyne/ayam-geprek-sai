@@ -119,4 +119,9 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .title {
+    font-family: var(--font-great-vibes);
+    color: #ff9f0d !important;
+  }
 }

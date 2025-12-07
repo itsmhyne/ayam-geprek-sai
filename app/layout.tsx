@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Great_Vibes, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import HeaderWebsite from "@/components/website/header";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/website/AppSidebar";
 
 const robotoSans = Inter({
@@ -13,6 +13,12 @@ const robotoSans = Inter({
 
 const spaceMono = Roboto({
   variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const greatVibes = Great_Vibes({
+  variable: "--font-great-vibes",
   subsets: ["latin"],
   weight: "400",
 });
@@ -30,18 +36,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${robotoSans.className} ${spaceMono.className} antialiased`}
+        className={`${robotoSans.className} ${spaceMono.className} ${greatVibes.variable} antialiased`}
       >
         <SidebarProvider>
-          <AppSidebar />
-          <main className="container px-4 xl:px-0">
+          <AppSidebar className="lg:hidden" />
+          <main className="container">
             {/* ----- Header Section ----- */}
             <section>
               <HeaderWebsite />
             </section>
             {/* ----- End Header Section----- */}
             {/* ----- Content Section----- */}
-            {/* <section>{children}</section> */}
+            <section className="lg:-ml-64">{children}</section>
             {/* ----- End Content Section----- */}
           </main>
         </SidebarProvider>

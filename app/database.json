@@ -1,0 +1,96 @@
+{
+  "navMain": [
+    {
+      "title": "Beranda",
+      "url": "#",
+      "items": []
+    },
+    {
+      "title": "Pesantren Kuliner",
+      "url": "#",
+      "items": [
+        {
+          "title": "PT. UBS",
+          "url": "#"
+        },
+        {
+          "title": "Kajian",
+          "url": "#",
+          "isActive": true
+        },
+        {
+          "title": "Gallery",
+          "url": "#"
+        },
+        {
+          "title": "Aqidah",
+          "url": "#"
+        },
+        {
+          "title": "Akhlak",
+          "url": "#"
+        },
+        {
+          "title": "Kitab Thaharah",
+          "url": "#"
+        },
+        {
+          "title": "Kitab Shalat",
+          "url": "#"
+        },
+        {
+          "title": "Kitab Puasa",
+          "url": "#"
+        },
+        {
+          "title": "Doa-Doa Harian",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Menu Kami",
+      "url": "#",
+      "items": []
+    },
+    {
+      "title": "Aktivitas Store",
+      "url": "#",
+      "items": [
+        {
+          "title": "Gallery Event",
+          "url": "#"
+        },
+        {
+          "title": "Gallery Promo & LSM",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "title": "Pengembangan SDM",
+      "url": "#",
+      "items": []
+    },
+    {
+      "title": "Outlet Kami",
+      "url": "#",
+      "items": []
+    },
+    {
+      "title": "Karir",
+      "url": "#",
+      "items": []
+    },
+    {
+      "title": "Blog",
+      "url": "#",
+      "items": []
+    },
+    {
+      "title": "Kontak",
+      "url": "#",
+      "items": []
+    }
+  ]
+}
