@@ -28,12 +28,8 @@ export default function HeaderWebsite() {
       >
         <div className="container">
           <div className="menu flex justify-between items-center">
-            <Image
-              src={logo}
-              alt={"logo sai"}
-              className="w-[50px] order-1 md:order-2"
-            />
-            <SidebarTrigger className="order-2 md:order-1 md:mr-auto lg:hidden text-white" />
+            <Image src={logo} alt={"logo sai"} className="w-[50px] order-1 " />
+            <SidebarTrigger className="order-2 lg:hidden text-white" />
           </div>
         </div>
       </nav>

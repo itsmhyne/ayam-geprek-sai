@@ -38,18 +38,24 @@ export default function RootLayout({
       <body
         className={`${robotoSans.className} ${spaceMono.className} ${greatVibes.variable} antialiased`}
       >
-        <SidebarProvider>
+        {/* <SidebarProvider>
           <AppSidebar className="lg:hidden" />
           <main className="container">
-            {/* ----- Header Section ----- */}
             <section>
               <HeaderWebsite />
             </section>
-            {/* ----- End Header Section----- */}
-            {/* ----- Content Section----- */}
-            <section className="lg:-ml-64">{children}</section>
-            {/* ----- End Content Section----- */}
+            <section>{children}</section>
           </main>
+        </SidebarProvider> */}
+        <SidebarProvider className="flex gap-[2%] flex-wrap content-start">
+          <div className="w-full h-[5%]">
+            <HeaderWebsite />
+          </div>
+          <div className="w-1/4 h-3/4 z-50 lg:hidden">
+            <AppSidebar />
+          </div>
+          <div className="grow h-3/4">{children}</div>
+          <div className="w-full h-[5%]">Footer</div>
         </SidebarProvider>
       </body>
     </html>

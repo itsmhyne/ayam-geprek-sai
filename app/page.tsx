@@ -19,7 +19,7 @@ export default function Home() {
 
         {/* Konten */}
         <div className="relative z-10 flex flex-col h-full justify-center px-6 md:px-20">
-          <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl">
+          <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0">
             Its Quick & Amusing!
           </h1>
           <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-4 max-w-md">
@@ -32,7 +32,7 @@ export default function Home() {
             quos. Quae eveniet rerum perspiciatis mollitia dolorem eius
           </p>
 
-          <button className="mt-6 bg-chart-5 text-white px-6 py-3 rounded-full text-xs w-fit hover:bg-neutral-200">
+          <button className="mt-6 bg-chart-5 text-white px-6 py-3 rounded-full text-[7px] md:text-[10px] lg:text-[16px] w-fit hover:bg-neutral-200">
             Lihat Menu
           </button>
         </div>
