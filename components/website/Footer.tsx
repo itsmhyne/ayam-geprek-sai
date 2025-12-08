@@ -49,14 +49,16 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="baseline bg-chart-5 w-full flex px-4 py-4 justify-between items-center">
-        <p className="copyright text-white text-xs">
-          Copyrigt &copy; by M. Hamdan Yusuf. All Rights Reserved.
-        </p>
-        <div className="sosmed flex gap-1.5">
-          <Smile className="bg-white p-1 rounded-b-sm" />
-          <Angry className="bg-white p-1 rounded-b-sm" />
-          <ScanFace className="bg-white p-1 rounded-b-sm" />
+      <div className="baseline bg-chart-5 w-full px-4 py-4">
+        <div className="content lg:w-[1070px] mx-auto flex justify-between items-center">
+          <p className="copyright text-white text-xs">
+            Copyrigt &copy; by M. Hamdan Yusuf. All Rights Reserved.
+          </p>
+          <div className="sosmed flex gap-1.5">
+            <Smile className="bg-white p-1 rounded-b-sm" />
+            <Angry className="bg-white p-1 rounded-b-sm" />
+            <ScanFace className="bg-white p-1 rounded-b-sm" />
+          </div>
         </div>
       </div>
     </>
