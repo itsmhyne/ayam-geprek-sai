@@ -4,6 +4,7 @@ import "./globals.css";
 import HeaderWebsite from "@/components/website/header";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/website/AppSidebar";
+import Footer from "@/components/website/Footer";
 
 const robotoSans = Inter({
   variable: "--font-roboto-sans",
@@ -57,6 +58,7 @@ export default function RootLayout({
           <div className="grow h-3/4">{children}</div>
           <div className="w-full h-[5%]">Footer</div>
         </SidebarProvider>
+        <Footer />
       </body>
     </html>
   );

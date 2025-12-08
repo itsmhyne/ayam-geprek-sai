@@ -1,4 +1,5 @@
 import heroBg from "@/public/img/hero.png";
+import hero1 from "@/public/img/hero_1.png";
 import Image from "next/image";
 import food_1 from "@/public/img/food-1.png";
 import food_2 from "@/public/img/food-2.png";
@@ -7,7 +8,13 @@ import category_1 from "@/public/img/category_1.png";
 import category_2 from "@/public/img/category_2.png";
 import category_3 from "@/public/img/category_3.png";
 import category_4 from "@/public/img/category_4.png";
-import { CheckCircle, CheckLine } from "lucide-react";
+import { CheckCircle, CheckLine, ChevronLeft } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (
@@ -26,28 +33,31 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
 
         {/* Konten */}
-        <div className="relative z-10 flex flex-col h-full justify-center px-6 md:px-20">
-          <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
-            Its Quick & Amusing!
-          </h1>
-          <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-1">
-            <span className="text-chart-5">Th</span>e Art of Speed
-            <br />
-            Food Quality
-          </p>
-          <p className="text-[7px] md:text-[10px] lg:text-[16px] text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            <br />
-            Libero, ab quos. Quae eveniet rerum perspiciatis mollitia dolorem
-            eius
-          </p>
+        <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-10 lg:w-[1070px] lg:mx-auto">
+          <div className="flex flex-col">
+            <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+              Its Quick & Amusing!
+            </h1>
+            <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-1">
+              <span className="text-chart-5">Th</span>e Art of Speed
+              <br />
+              Food Quality
+            </p>
+            <p className="text-[7px] md:text-[10px] lg:text-[16px] text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              <br />
+              Libero, ab quos. Quae eveniet rerum perspiciatis mollitia dolorem
+              eius
+            </p>
 
-          <button className="mt-6 bg-chart-5 text-white px-4 py-2 rounded-full text-[7px] md:text-[10px] lg:text-[16px] w-fit hover:bg-chart-4">
-            See Menu
-          </button>
+            <button className="mt-6 bg-chart-5 text-white px-4 py-2 rounded-full text-[7px] md:text-[10px] lg:text-[16px] w-fit hover:bg-chart-4">
+              See Menu
+            </button>
+          </div>
+          <Image src={hero1} alt={"image"} className="hidden lg:block" />
         </div>
       </section>
-      <section className="content px-4 py-5 lg:py-10">
+      <section className="content px-10 lg:w-[1070px] mx-auto flex flex-col items-center md:mt-[104px]">
         <div className="grid gap-2.5 lg:grid-cols-2">
           <div className="">
             <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
@@ -86,112 +96,51 @@ export default function Home() {
               Read More
             </button>
           </div>
-          <div className="grid grid-cols-2 gap-2.5 text-white mt-4 md:mt-0">
-            <Image src={food_1} alt="Background Hero" className="col-span-2" />
-            <Image src={food_2} alt="Background Hero" className="" />
-            <Image src={food_3} alt="Background Hero" className="" />
+          <div className="grid grid-cols-2 gap-4 mt-5 lg:mt-0">
+            <div className="relative col-span-2 row-span-2 h-[200px] md:h-[400px]">
+              <Image
+                src={food_1}
+                alt="Background Hero"
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
+            <div className="relative h-[100px] md:h-[200px]">
+              <Image
+                src={food_2}
+                alt="Background Hero"
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
+            <div className="relative h-[100px] md:h-[200px]">
+              <Image
+                src={food_3}
+                alt="Background Hero"
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
           </div>
         </div>
-        <div>
-          <div className="text-center">
-            <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
-              Food Category
-            </h1>
-            <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-1">
-              <span className="text-chart-5">Ch</span>oose Food Item
-            </p>
-            <div className="grid justify-center mt-5 gap-2.5">
+        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
+          <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+            Food Category
+          </h1>
+          <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-1">
+            <span className="text-chart-5">Ch</span>oose Food Item
+          </p>
+          <Carousel className="mt-10">
+            <CarouselPrevious />
+            <CarouselContent className="gap-5">
               <Image src={category_1} alt="category" className="" />
               <Image src={category_2} alt="category" className="" />
               <Image src={category_3} alt="category" className="" />
               <Image src={category_4} alt="category" className="" />
-            </div>
-          </div>
+            </CarouselContent>
+            <CarouselNext />
+          </Carousel>
         </div>
-        <p className="py-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          excepturi reiciendis labore pariatur, molestiae rerum animi vitae
-          quidem corrupti sunt eveniet. Laudantium mollitia eos nihil dolor,
-          corporis fuga ratione modi repellat eligendi, quidem laborum voluptas
-          animi iste assumenda, voluptatibus maxime libero at doloribus
-          voluptate. Porro accusamus aliquam consequuntur sed ratione qui
-          commodi magni animi corporis quae, aspernatur eligendi ipsam minima
-          nostrum reprehenderit. Nulla amet accusantium aspernatur beatae dolore
-          dicta, dolor eaque veniam natus omnis. Culpa, soluta. Facilis dolorum,
-          quod vel quos possimus voluptate consectetur cupiditate voluptates
-          consequatur eligendi iste laudantium, repellendus, non aperiam beatae
-          ab corporis debitis est. Doloribus, obcaecati.
-        </p>
-        <p className="py-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          excepturi reiciendis labore pariatur, molestiae rerum animi vitae
-          quidem corrupti sunt eveniet. Laudantium mollitia eos nihil dolor,
-          corporis fuga ratione modi repellat eligendi, quidem laborum voluptas
-          animi iste assumenda, voluptatibus maxime libero at doloribus
-          voluptate. Porro accusamus aliquam consequuntur sed ratione qui
-          commodi magni animi corporis quae, aspernatur eligendi ipsam minima
-          nostrum reprehenderit. Nulla amet accusantium aspernatur beatae dolore
-          dicta, dolor eaque veniam natus omnis. Culpa, soluta. Facilis dolorum,
-          quod vel quos possimus voluptate consectetur cupiditate voluptates
-          consequatur eligendi iste laudantium, repellendus, non aperiam beatae
-          ab corporis debitis est. Doloribus, obcaecati.
-        </p>
-        <p className="py-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          excepturi reiciendis labore pariatur, molestiae rerum animi vitae
-          quidem corrupti sunt eveniet. Laudantium mollitia eos nihil dolor,
-          corporis fuga ratione modi repellat eligendi, quidem laborum voluptas
-          animi iste assumenda, voluptatibus maxime libero at doloribus
-          voluptate. Porro accusamus aliquam consequuntur sed ratione qui
-          commodi magni animi corporis quae, aspernatur eligendi ipsam minima
-          nostrum reprehenderit. Nulla amet accusantium aspernatur beatae dolore
-          dicta, dolor eaque veniam natus omnis. Culpa, soluta. Facilis dolorum,
-          quod vel quos possimus voluptate consectetur cupiditate voluptates
-          consequatur eligendi iste laudantium, repellendus, non aperiam beatae
-          ab corporis debitis est. Doloribus, obcaecati.
-        </p>
-        <p className="py-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          excepturi reiciendis labore pariatur, molestiae rerum animi vitae
-          quidem corrupti sunt eveniet. Laudantium mollitia eos nihil dolor,
-          corporis fuga ratione modi repellat eligendi, quidem laborum voluptas
-          animi iste assumenda, voluptatibus maxime libero at doloribus
-          voluptate. Porro accusamus aliquam consequuntur sed ratione qui
-          commodi magni animi corporis quae, aspernatur eligendi ipsam minima
-          nostrum reprehenderit. Nulla amet accusantium aspernatur beatae dolore
-          dicta, dolor eaque veniam natus omnis. Culpa, soluta. Facilis dolorum,
-          quod vel quos possimus voluptate consectetur cupiditate voluptates
-          consequatur eligendi iste laudantium, repellendus, non aperiam beatae
-          ab corporis debitis est. Doloribus, obcaecati.
-        </p>
-        <p className="py-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          excepturi reiciendis labore pariatur, molestiae rerum animi vitae
-          quidem corrupti sunt eveniet. Laudantium mollitia eos nihil dolor,
-          corporis fuga ratione modi repellat eligendi, quidem laborum voluptas
-          animi iste assumenda, voluptatibus maxime libero at doloribus
-          voluptate. Porro accusamus aliquam consequuntur sed ratione qui
-          commodi magni animi corporis quae, aspernatur eligendi ipsam minima
-          nostrum reprehenderit. Nulla amet accusantium aspernatur beatae dolore
-          dicta, dolor eaque veniam natus omnis. Culpa, soluta. Facilis dolorum,
-          quod vel quos possimus voluptate consectetur cupiditate voluptates
-          consequatur eligendi iste laudantium, repellendus, non aperiam beatae
-          ab corporis debitis est. Doloribus, obcaecati.
-        </p>
-        <p className="py-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-          excepturi reiciendis labore pariatur, molestiae rerum animi vitae
-          quidem corrupti sunt eveniet. Laudantium mollitia eos nihil dolor,
-          corporis fuga ratione modi repellat eligendi, quidem laborum voluptas
-          animi iste assumenda, voluptatibus maxime libero at doloribus
-          voluptate. Porro accusamus aliquam consequuntur sed ratione qui
-          commodi magni animi corporis quae, aspernatur eligendi ipsam minima
-          nostrum reprehenderit. Nulla amet accusantium aspernatur beatae dolore
-          dicta, dolor eaque veniam natus omnis. Culpa, soluta. Facilis dolorum,
-          quod vel quos possimus voluptate consectetur cupiditate voluptates
-          consequatur eligendi iste laudantium, repellendus, non aperiam beatae
-          ab corporis debitis est. Doloribus, obcaecati.
-        </p>
       </section>
     </>
   );
