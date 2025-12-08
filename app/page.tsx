@@ -34,11 +34,11 @@ export default function Home() {
 
         {/* Konten */}
         <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-10 lg:w-[1070px] lg:mx-auto">
-          <div className="flex flex-col">
-            <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+          <div className="flex flex-col gap-2.5">
+            <h3 className="heading3 title font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               Its Quick & Amusing!
-            </h1>
-            <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-1">
+            </h3>
+            <p className="text-white heading1 font-bold mt-1">
               <span className="text-chart-5">Th</span>e Art of Speed
               <br />
               Food Quality
@@ -63,7 +63,7 @@ export default function Home() {
             <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               About Us
             </h1>
-            <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-1">
+            <p className="text-white heading1 font-bold mt-1">
               <span className="text-chart-5">We</span> Created the Best
               <br />
               Foody Product
@@ -127,7 +127,7 @@ export default function Home() {
           <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Food Category
           </h1>
-          <p className="text-white text-2xl md:text-4xl lg:text-6xl font-bold mt-1">
+          <p className="text-white heading1 font-bold mt-1">
             <span className="text-chart-5">Ch</span>oose Food Item
           </p>
           <Carousel className="mt-10">

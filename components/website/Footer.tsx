@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { ButtonGroup } from "../ui/button-group";
 import { Input } from "../ui/input";
-import { Angry, FacebookIcon, History, ScanFace, Smile } from "lucide-react";
+import { Angry, History, ScanFace, Smile } from "lucide-react";
 export default function Footer() {
   return (
     <>
