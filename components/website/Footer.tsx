@@ -9,27 +9,30 @@ export default function Footer() {
     <>
       <div className="bottom-0 left-0 right-0 px-10 lg:w-[1070px] my-10 mx-auto text-white">
         <div className="email">
-          <p className="text-white text-lg md:text-xl lg:text-2xl font-bold mt-1">
+          <p className="text-white heading3 font-bold mt-1">
             <span className="text-chart-5">St</span>ill You Need Our Support ?
           </p>
-          <p className="text-[7px] md:text-[10px] lg:text-[16px] text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+          <p className="bodysmall text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit
           </p>
           <ButtonGroup className=" mt-5">
             <Input
-              type="text"
+              type="email"
               placeholder="Enter Your Email"
-              className="bg-chart-5 text-white placeholder:text-white font-medium"
+              className="bg-chart-5 text-white inputtext placeholder:text-white font-medium"
             />
-            <Button variant="outline" className="bg-white text-chart-5">
+            <Button
+              variant="outline"
+              className="bg-white buttontext text-chart-5"
+            >
               Subscribe
             </Button>
           </ButtonGroup>
         </div>
         <hr className="bg-chart-5 my-5" />
         <div className="about">
-          <h4>About Us</h4>
-          <p className="text-xs md:text-base">
+          <h4 className="bodylarge">About Us</h4>
+          <p className="bodysmall">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
             corporis odio nihil explicabo ab. Maiores illo quisquam iusto
             doloremque sunt.
@@ -39,8 +42,8 @@ export default function Footer() {
               <History className="text-white size-7" />
             </div>
             <div className="flex flex-col">
-              <span className="text-base">Opening Hours</span>
-              <p className="text-xs">
+              <span className="bodylarge">Opening Hours</span>
+              <p className="bodysmall">
                 Mon - Sat(8.00 - 6.00)
                 <br />
                 Sunday - Closed
@@ -51,13 +54,13 @@ export default function Footer() {
       </div>
       <div className="baseline bg-chart-5 w-full px-4 py-4">
         <div className="content lg:w-[1070px] mx-auto flex justify-between items-center">
-          <p className="copyright text-white text-xs">
+          <p className="copyright text-white bodysmall">
             Copyrigt &copy; by M. Hamdan Yusuf. All Rights Reserved.
           </p>
           <div className="sosmed flex gap-1.5">
-            <Smile className="bg-white p-1 rounded-b-sm" />
-            <Angry className="bg-white p-1 rounded-b-sm" />
-            <ScanFace className="bg-white p-1 rounded-b-sm" />
+            <Smile className="bg-white p-1 rounded-sm" />
+            <Angry className="bg-white p-1 rounded-sm" />
+            <ScanFace className="bg-white p-1 rounded-sm" />
           </div>
         </div>
       </div>

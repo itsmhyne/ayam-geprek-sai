@@ -43,14 +43,14 @@ export default function Home() {
               <br />
               Food Quality
             </p>
-            <p className="text-[7px] md:text-[10px] lg:text-[16px] text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+            <p className="bodysmall text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               <br />
               Libero, ab quos. Quae eveniet rerum perspiciatis mollitia dolorem
               eius
             </p>
 
-            <button className="mt-6 bg-chart-5 text-white px-4 py-2 rounded-full text-[7px] md:text-[10px] lg:text-[16px] w-fit hover:bg-chart-4">
+            <button className="mt-6 bg-chart-5 text-white px-4 py-2 rounded-full buttontext w-fit hover:bg-chart-4">
               See Menu
             </button>
           </div>
@@ -60,7 +60,7 @@ export default function Home() {
       <section className="content px-10 lg:w-[1070px] mx-auto flex flex-col items-center md:mt-[104px]">
         <div className="grid gap-2.5 lg:grid-cols-2">
           <div className="">
-            <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+            <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               About Us
             </h1>
             <p className="text-white heading1 font-bold mt-1">
@@ -68,7 +68,7 @@ export default function Home() {
               <br />
               Foody Product
             </p>
-            <p className="text-[7px] md:text-[10px] lg:text-[16px] text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+            <p className="bodysmall text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
               molestiae, distinctio perferendis, rerum voluptates eos, placeat
               enim neque corporis eligendi velit! Tempore suscipit, explicabo
@@ -78,7 +78,7 @@ export default function Home() {
               quasi veritatis iure soluta mollitia quam, corporis nobis omnis
               amet ut, fuga id corrupti quod nam accusantium.
             </p>
-            <ul className="mt-5 text-white text-[7px] md:text-[10px] lg:text-[16px] flex flex-col gap-2">
+            <ul className="mt-5 text-white bodysmall flex flex-col gap-2">
               <li className="flex gap-2 items-center">
                 <CheckCircle className="size-4" /> Lorem ipsum dolor sit amet
                 consectetur adipisicing.
@@ -92,7 +92,7 @@ export default function Home() {
                 consectetur adipisicing.
               </li>
             </ul>
-            <button className="mt-6 bg-chart-5 text-white px-4 py-2 rounded-full text-[7px] md:text-[10px] lg:text-[16px] w-fit hover:bg-chart-4">
+            <button className="mt-6 bg-chart-5 text-white px-4 py-2 rounded-full buttontext w-fit hover:bg-chart-4">
               Read More
             </button>
           </div>
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center md:mt-[104px]">
-          <h1 className="title text-xs md:text-[20px] lg:text-3xl font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+          <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Food Category
           </h1>
           <p className="text-white heading1 font-bold mt-1">
