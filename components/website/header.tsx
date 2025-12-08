@@ -20,13 +20,17 @@ export default function HeaderWebsite() {
   return (
     <>
       <nav
-        className={`py-9 px-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`py-8 px-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled ? "backdrop-blur-sm bg-black shadow-sm" : "bg-transparent"
         }`}
       >
         <div className="container">
           <div className="menu flex justify-between items-center">
-            <Image src={logo} alt={"logo sai"} className="w-[50px] order-1 " />
+            <Image
+              src={logo}
+              alt={"logo sai"}
+              className="w-10 md:w-16 order-1 "
+            />
             <SidebarTrigger className="order-2 lg:hidden text-white" />
           </div>
         </div>

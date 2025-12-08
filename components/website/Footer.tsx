@@ -4,11 +4,14 @@ import { Button } from "../ui/button";
 import { ButtonGroup } from "../ui/button-group";
 import { Input } from "../ui/input";
 import { Angry, History, ScanFace, Smile } from "lucide-react";
+import post1 from "@/public/post/post-1.png";
+import post2 from "@/public/post/post-2.png";
+import post3 from "@/public/post/post-3.png";
 export default function Footer() {
   return (
     <>
       <div className="bottom-0 left-0 right-0 px-10 lg:w-[1070px] my-10 mx-auto text-white">
-        <div className="email">
+        <div className="email grid grid-cols-1 md:grid-flow-col md:grid-rows-2 md:row-start-1 md:row-end-2">
           <p className="text-white heading3 font-bold mt-1">
             <span className="text-chart-5">St</span>ill You Need Our Support ?
           </p>
@@ -30,27 +33,87 @@ export default function Footer() {
           </ButtonGroup>
         </div>
         <hr className="bg-chart-5 my-5" />
-        <div className="about">
-          <h4 className="bodylarge">About Us</h4>
-          <p className="bodysmall">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
-            corporis odio nihil explicabo ab. Maiores illo quisquam iusto
-            doloremque sunt.
-          </p>
-          <div className="flex my-5 gap-2.5 flex-wrap items-center">
-            <div className="div bg-chart-5 p-2">
-              <History className="text-white size-7" />
-            </div>
-            <div className="flex flex-col">
-              <span className="bodylarge">Opening Hours</span>
-              <p className="bodysmall">
-                Mon - Sat(8.00 - 6.00)
-                <br />
-                Sunday - Closed
-              </p>
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="about py-2.5 md:py-0">
+            <h4 className="bodylarge">About Us</h4>
+            <p className="bodysmall">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+              corporis odio nihil explicabo ab. Maiores illo quisquam iusto
+              doloremque sunt.
+            </p>
+            <div className="flex my-5 gap-2.5 flex-wrap items-center">
+              <div className="div bg-chart-5 p-2">
+                <History className="text-white size-7" />
+              </div>
+              <div className="flex flex-col">
+                <span className="bodylarge">Opening Hours</span>
+                <p className="bodysmall">
+                  Mon - Sat(8.00 - 6.00)
+                  <br />
+                  Sunday - Closed
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+          <div className="useful-links py-2.5 md:py-0">
+            <h4 className="bodylarge">Useful Links</h4>
+            <ul className="bodysmall mt-2.5 gap-5 grid grid-rows-2 md:grid-cols-1">
+              <li>About</li>
+              <li>News</li>
+              <li>Partners</li>
+              <li>Team</li>
+              <li>Menu</li>
+              <li>Contacts</li>
+            </ul>
+          </div>
+          {/* help section */}
+          <div className="help py-2.5 md:py-0">
+            <h4 className="bodylarge">Help?</h4>
+            <ul className="bodysmall mt-2.5 gap-5 grid grid-rows-2 md:grid-cols-1">
+              <li>FAQ</li>
+              <li>Terms & Condition</li>
+              <li>Reporting</li>
+              <li>Documentation</li>
+              <li>Support Policy</li>
+              <li>Privacy</li>
+            </ul>
+          </div>
+          {/* end help section */}
+          {/* recent post section */}
+          <div className=" py-2.5 md:py-0">
+            <h4 className="bodylarge">Recent Post</h4>
+            <ul className="bodysmall mt-2.5 gap-5 grid grid-cols-1">
+              <li className="flex items-center gap-2.5">
+                <div className="image">
+                  <Image src={post1} alt={"post image"} />
+                </div>
+                <div className="content flex flex-col">
+                  <span className="bodysmall text-slate-500">02 Nov 2025</span>
+                  <span className="bodysmall">Lorem ipsum dolor sit.</span>
+                </div>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <div className="image">
+                  <Image src={post2} alt={"post image"} />
+                </div>
+                <div className="content flex flex-col">
+                  <span className="bodysmall text-slate-500">02 Nov 2025</span>
+                  <span className="bodysmall">Lorem ipsum dolor sit.</span>
+                </div>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <div className="image">
+                  <Image src={post3} alt={"post image"} />
+                </div>
+                <div className="content flex flex-col">
+                  <span className="bodysmall text-slate-500">02 Nov 2025</span>
+                  <span className="bodysmall">Lorem ipsum dolor sit.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          {/* end recent post section */}
+        </section>
       </div>
       <div className="baseline bg-chart-5 w-full px-4 py-4">
         <div className="content lg:w-[1070px] mx-auto flex justify-between items-center">
