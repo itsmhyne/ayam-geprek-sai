@@ -13,15 +13,16 @@ export default function Footer() {
       <div className="bottom-0 left-0 right-0 px-10 lg:w-[1070px] mt-10 my-10 mx-auto text-white">
         <div className="email grid grid-cols-1 md:grid-flow-col md:grid-rows-2 md:row-start-1 md:row-end-2">
           <p className="text-white heading3 font-bold mt-1">
-            <span className="text-chart-5">St</span>ill You Need Our Support ?
+            <span className="text-chart-5">Ka</span>mi membutuhkan dukungan anda
+            ?
           </p>
           <p className="bodysmall text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit
+            Notifikasi dan pesan akan akan kami kirim ke alamat email anda
           </p>
           <ButtonGroup className=" mt-5">
             <Input
               type="email"
-              placeholder="Enter Your Email"
+              placeholder="Masukkan email anda"
               className="bg-chart-5 text-white inputtext placeholder:text-white font-medium"
             />
             <Button
@@ -35,22 +36,23 @@ export default function Footer() {
         <hr className="bg-chart-5 my-5" />
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           <div className="about py-2.5 md:py-0">
-            <h4 className="bodylarge">About Us</h4>
+            <h4 className="bodylarge">Tentang Kami</h4>
             <p className="bodysmall">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
-              corporis odio nihil explicabo ab. Maiores illo quisquam iusto
-              doloremque sunt.
+              Sa’i berarti ikhtiar. Kata Sa’i seakar dengan kata dasar Sa’a yang
+              berarti usaha. Secara filosofi peristiwa menggambarkan seorang ibu
+              yang gigih berusaha keras mencari air guna memberi minum anaknya
+              dengan penuh keyakinan akan bantuan dari Alloh SWT.
             </p>
             <div className="flex my-5 gap-2.5 flex-wrap items-center">
               <div className="div bg-chart-5 p-2">
                 <History className="text-white size-7" />
               </div>
               <div className="flex flex-col">
-                <span className="bodylarge">Opening Hours</span>
+                <span className="bodylarge">Jam Buka</span>
                 <p className="bodysmall">
-                  Mon - Sat(8.00 - 6.00)
+                  Setiap Hari(09.00 - 22.00)
                   <br />
-                  Sunday - Closed
+                  Weekend kami buka 1 jam lebih awal
                 </p>
               </div>
             </div>
@@ -58,12 +60,12 @@ export default function Footer() {
           <div className="useful-links py-2.5 md:py-0">
             <h4 className="bodylarge">Useful Links</h4>
             <ul className="bodysmall mt-2.5 gap-5 grid grid-rows-2 md:grid-cols-1">
-              <li>About</li>
-              <li>News</li>
-              <li>Partners</li>
-              <li>Team</li>
-              <li>Menu</li>
-              <li>Contacts</li>
+              <li>Menu Kami</li>
+              <li>Outlet Kami</li>
+              <li>Karir</li>
+              <li>Blog</li>
+              <li>Kontak</li>
+              <li>Gallery Event</li>
             </ul>
           </div>
           {/* help section */}
