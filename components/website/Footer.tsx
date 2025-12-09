@@ -10,7 +10,7 @@ import post3 from "@/public/post/post-3.png";
 export default function Footer() {
   return (
     <>
-      <div className="bottom-0 left-0 right-0 px-10 lg:w-[1070px] my-10 mx-auto text-white">
+      <div className="bottom-0 left-0 right-0 px-10 lg:w-[1070px] mt-10 my-10 mx-auto text-white">
         <div className="email grid grid-cols-1 md:grid-flow-col md:grid-rows-2 md:row-start-1 md:row-end-2">
           <p className="text-white heading3 font-bold mt-1">
             <span className="text-chart-5">St</span>ill You Need Our Support ?
