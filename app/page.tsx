@@ -259,22 +259,18 @@ export default function Home() {
         </div>
         {/* End Kemitraan */}
         {/* news blog */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
+        <div className="mt-10  flex flex-col items-center md:mt-[104px]">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Berita dan Postingan Terbaru
           </h1>
           <p className="text-white heading1 font-bold mt-1 text-center">
             <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
           </p>
-          <Carousel className="mt-10 max-w-[1070px]">
+          {/* <Carousel className="mt-10">
             <CarouselPrevious />
             <CarouselContent className="gap-5">
               <div className="blog w-[392px]">
-                <Image
-                  src={category_1}
-                  alt="category"
-                  className="w-full h-[313px]"
-                />
+                <Image src={category_1} alt="category" className="h-[313px]" />
                 <div className="content p-2 text-white">
                   <div className="flex gap-2.5 labelsmall">
                     <CalendarClock className="text-chart-5" />
@@ -296,11 +292,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog w-[392px]">
-                <Image
-                  src={category_2}
-                  alt="category"
-                  className="w-full h-[313px]"
-                />
+                <Image src={category_2} alt="category" className="h-[313px]" />
                 <div className="content p-2 text-white">
                   <div className="flex gap-2.5 labelsmall">
                     <CalendarClock className="text-chart-5" />
@@ -322,11 +314,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog w-[392px]">
-                <Image
-                  src={category_3}
-                  alt="category"
-                  className="w-full h-[313px]"
-                />
+                <Image src={category_3} alt="category" className="h-[313px]" />
                 <div className="content p-2 text-white">
                   <div className="flex gap-2.5 labelsmall">
                     <CalendarClock className="text-chart-5" />
@@ -348,11 +336,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="blog w-[392px]">
-                <Image
-                  src={category_4}
-                  alt="category"
-                  className="w-full h-[313px]"
-                />
+                <Image src={category_4} alt="category" className="h-[313px]" />
                 <div className="content p-2 text-white">
                   <div className="flex gap-2.5 labelsmall">
                     <CalendarClock className="text-chart-5" />
@@ -375,7 +359,7 @@ export default function Home() {
               </div>
             </CarouselContent>
             <CarouselNext />
-          </Carousel>
+          </Carousel> */}
         </div>
         {/* news blog */}
       </section>
