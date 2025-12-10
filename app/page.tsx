@@ -22,6 +22,7 @@ import {
 import {
   Carousel,
   CarouselContent,
+  CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
@@ -115,24 +116,14 @@ export default function Home() {
         </div>
         {/* end section tentang kami */}
         {/* start section kategori makanan */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
+        {/* <div className="mt-10 flex flex-col items-center md:mt-[104px]">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kategori Makanan
           </h1>
           <p className="heading1 font-bold mt-1">
             <span className="text-chart-5">Pi</span>lih Kategori Produk
           </p>
-          <Carousel className="mt-10">
-            <CarouselPrevious />
-            <CarouselContent className="gap-5">
-              <Image src={category_1} alt="category" className="" />
-              <Image src={category_2} alt="category" className="" />
-              <Image src={category_3} alt="category" className="" />
-              <Image src={category_4} alt="category" className="" />
-            </CarouselContent>
-            <CarouselNext />
-          </Carousel>
-        </div>
+        </div> */}
         {/* end section kategori makanan */}
         {/* start section visi misi */}
         <div className="mt-10 grid gap-10 lg:grid-cols-2">
