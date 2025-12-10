@@ -10,20 +10,20 @@ import post3 from "@/public/post/post-3.png";
 export default function Footer() {
   return (
     <>
-      <div className="bottom-0 left-0 right-0 px-10 lg:w-[1070px] mt-10 my-10 mx-auto text-white">
+      <div className="bottom-0 left-0 right-0 px-10 lg:w-[1070px] mt-10 my-10 mx-auto ">
         <div className="email grid grid-cols-1 md:grid-flow-col md:grid-rows-2 md:row-start-1 md:row-end-2">
-          <p className="text-white heading3 font-bold mt-1">
+          <p className=" heading3 font-bold mt-1">
             <span className="text-chart-5">Ka</span>mi membutuhkan dukungan anda
             ?
           </p>
-          <p className="bodysmall text-white font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+          <p className="bodysmall  font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
             Notifikasi dan pesan akan akan kami kirim ke alamat email anda
           </p>
           <ButtonGroup className=" mt-5">
             <Input
               type="email"
               placeholder="Masukkan email anda"
-              className="bg-chart-5 text-white inputtext placeholder:text-white font-medium"
+              className="bg-chart-5  inputtext placeholder: font-medium"
             />
             <Button
               variant="outline"
@@ -45,7 +45,7 @@ export default function Footer() {
             </p>
             <div className="flex my-5 gap-2.5 flex-wrap items-center">
               <div className="div bg-chart-5 p-2">
-                <History className="text-white size-7" />
+                <History className=" size-7" />
               </div>
               <div className="flex flex-col">
                 <span className="bodylarge">Jam Buka</span>
@@ -119,7 +119,7 @@ export default function Footer() {
       </div>
       <div className="baseline bg-chart-5 w-full px-4 py-4">
         <div className="content lg:w-[1070px] mx-auto flex justify-between items-center">
-          <p className="copyright text-white bodysmall">
+          <p className="copyright  bodysmall">
             Copyrigt &copy; by M. Hamdan Yusuf. All Rights Reserved.
           </p>
           <div className="sosmed flex gap-1.5">

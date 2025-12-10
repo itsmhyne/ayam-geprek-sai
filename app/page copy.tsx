@@ -29,8 +29,8 @@ import {
 export default function Home() {
   return (
     <>
-      {/* hero section start */}
       <section className="relative w-full h-[371px] md:h-[90vh]">
+        {/* Background image */}
         <Image
           src={heroBg}
           alt="Background Hero"
@@ -39,33 +39,35 @@ export default function Home() {
           className="object-cover"
         />
 
+        {/* Overlay (opsional) */}
         <div className="absolute inset-0 bg-black/40" />
 
+        {/* Konten */}
         <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-10 lg:max-w-[1070px] lg:mx-auto">
           <div className="flex flex-col gap-2.5">
             <h3 className="heading3 title font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               Motto Kami
             </h3>
-            <p className="heading1 font-bold mt-1 text-white">
+            <p className="heading1 font-bold mt-1">
               <span className="text-chart-5">Ke</span>nikmatan dalam
               <br />
               Kesederhanaan.
             </p>
-            <p className="bodysmall font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6 text-white">
+            <p className="bodysmall font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               <br />
               Libero, ab quos. Quae eveniet rerum perspiciatis mollitia dolorem
               eius
             </p>
+
+            {/* <button className="mt-6 bg-chart-5 px-4 py-2 rounded-full buttontext w-fit hover:bg-chart-4">
+              See Menu
+            </button> */}
           </div>
           <Image src={hero1} alt={"image"} className="hidden lg:block" />
         </div>
       </section>
-      {/* hero section end */}
-
-      {/* content start */}
       <section className="content px-10 lg:max-w-[1070px] mx-auto flex flex-col items-center md:mt-[104px]">
-        {/* start section tentang kami */}
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="">
             <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
@@ -113,9 +115,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* end section tentang kami */}
-        {/* start section kategori makanan */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
+        {/* <div className="mt-10 flex flex-col items-center md:mt-[104px]">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kategori Makanan
           </h1>
@@ -132,9 +132,8 @@ export default function Home() {
             </CarouselContent>
             <CarouselNext />
           </Carousel>
-        </div>
-        {/* end section kategori makanan */}
-        {/* start section visi misi */}
+        </div> */}
+        {/* Visi Misi */}
         <div className="mt-10 grid gap-10 lg:grid-cols-2">
           <section className="relative hidden md:block w-full max-w-[535px] mx-auto py-10">
             {/* Container utama */}
@@ -201,8 +200,8 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        {/* end section visi misi */}
-        {/* start section Kemitraan */}
+        {/* End Visi Misi */}
+        {/* Kemitraan */}
         <div className="mt-10 flex flex-col items-center md:mt-[104px]">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kemitraan
@@ -258,9 +257,18 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        {/* End section Kemitraan */}
+        {/* End Kemitraan */}
+        {/* news blog */}
+        {/* <div className="mt-10  flex flex-col items-center md:mt-[104px]">
+          <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+            Berita dan Postingan Terbaru
+          </h1>
+          <p className="heading1 font-bold mt-1 text-center">
+            <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
+          </p>
+        </div> */}
+        {/* news blog */}
       </section>
-      {/* content end */}
     </>
   );
 }

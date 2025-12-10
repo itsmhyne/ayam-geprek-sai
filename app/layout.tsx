@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body
-        className={`${robotoSans.className} ${spaceMono.className} ${greatVibes.variable} antialiased bg-black`}
+        className={`${robotoSans.className} ${spaceMono.className} ${greatVibes.variable} antialiased`}
       >
         <SidebarProvider className="flex gap-[2%] flex-wrap content-start">
           <div className="w-full h-[5%]">
