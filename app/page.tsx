@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/40" />
 
-        <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-24 w-full lg:mx-auto">
+        <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-4 md:px-10 lg:px-24 w-full lg:mx-auto">
           <div className="flex flex-col gap-2.5">
             <h3 className="heading3 title font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               Motto Kami
@@ -71,7 +71,7 @@ export default function Home() {
       {/* hero section end */}
 
       {/* content start */}
-      <section className="content px-24 w-full mx-auto flex flex-col items-center md:mt-[104px] ">
+      <section className="content px-4 md:px-10 lg:px-24 w-full mx-auto flex flex-col items-center md:mt-[104px] ">
         {/* start section tentang kami */}
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="">
