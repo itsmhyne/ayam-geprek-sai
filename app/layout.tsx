@@ -46,7 +46,7 @@ export default function RootLayout({
           <div className="w-1/4 h-3/4 z-50 lg:hidden">
             <AppSidebar />
           </div>
-          <div className="grow h-3/4 w-full ">{children}</div>
+          <div className="grow h-3/4 w-full bg-blue-400">{children}</div>
           <div className="w-full h-[5%]">
             <Footer />
           </div>

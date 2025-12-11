@@ -71,8 +71,7 @@ export default function Home() {
       {/* hero section end */}
 
       {/* content start */}
-      <section className="content px-4 md:px-10 lg:px-24 w-full mx-auto flex flex-col items-center md:mt-[104px] ">
-        {/* start section tentang kami */}
+      <section className="content px-10 lg:max-w-[1070px] mx-auto flex flex-col items-center md:mt-[104px]">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="">
             <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
@@ -83,7 +82,7 @@ export default function Home() {
               <br />
               Makanan Terbaik.
             </p>
-            <p className="bodymedium font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+            <p className="bodysmall font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
               Sa’i berarti ikhtiar. Kata Sa’i seakar dengan kata dasar Sa’a yang
               berarti usaha. Secara filosofi peristiwa menggambarkan seorang ibu
               yang gigih berusaha keras mencari air guna memberi minum anaknya
@@ -93,12 +92,10 @@ export default function Home() {
               Selengkapnya..
             </button>
           </div>
-          <div className="grid grid-cols-2 gap-2 md:gap-4 mt-5 lg:mt-0">
+          <div className="grid grid-cols-2 gap-4 mt-5 lg:mt-0">
             <div className="relative col-span-2 row-span-2 h-[200px] md:h-[200px]">
               <Image
                 src={food_1}
-                placeholder="blur"
-                loading="eager"
                 alt="Background Hero"
                 fill
                 className="object-cover rounded-xl"
@@ -107,8 +104,6 @@ export default function Home() {
             <div className="relative h-[100px] md:h-[200px]">
               <Image
                 src={food_2}
-                placeholder="blur"
-                loading="eager"
                 alt="Background Hero"
                 fill
                 className="object-cover rounded-xl"
@@ -117,8 +112,6 @@ export default function Home() {
             <div className="relative h-[100px] md:h-[200px]">
               <Image
                 src={food_3}
-                placeholder="blur"
-                loading="eager"
                 alt="Background Hero"
                 fill
                 className="object-cover rounded-xl"
@@ -126,9 +119,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* end section tentang kami */}
-        {/* start section kategori makanan */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full">
+        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kategori Makanan
           </h1>
@@ -137,42 +128,17 @@ export default function Home() {
           </p>
           <Carousel className="mt-10">
             <CarouselPrevious />
-            <CarouselContent className="gap-2 md:gap-5">
-              <Image
-                src={category_1}
-                placeholder="blur"
-                loading="eager"
-                alt="category"
-                className=""
-              />
-              <Image
-                src={category_2}
-                placeholder="blur"
-                loading="eager"
-                alt="category"
-                className=""
-              />
-              <Image
-                src={category_3}
-                placeholder="blur"
-                loading="eager"
-                alt="category"
-                className=""
-              />
-              <Image
-                src={category_4}
-                placeholder="blur"
-                loading="eager"
-                alt="category"
-                className=""
-              />
+            <CarouselContent className="gap-5">
+              <Image src={category_1} alt="category" className="" />
+              <Image src={category_2} alt="category" className="" />
+              <Image src={category_3} alt="category" className="" />
+              <Image src={category_4} alt="category" className="" />
             </CarouselContent>
             <CarouselNext />
           </Carousel>
         </div>
-        {/* end section kategori makanan */}
-        {/* start section visi misi */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-2 md:mt-[104px] w-full">
+        {/* Visi Misi */}
+        <div className="mt-10 grid gap-10 lg:grid-cols-2">
           <section className="relative hidden md:block w-full max-w-[535px] mx-auto py-10">
             {/* Container utama */}
             <div className="relative flex flex-col md:flex-row items-center md:items-start justify-center gap-6">
@@ -180,8 +146,6 @@ export default function Home() {
               <div className="relative">
                 <Image
                   src={visi_1}
-                  placeholder="blur"
-                  loading="eager"
                   alt="Cutting food"
                   className="w-[424px] h-[523px]  rounded-xl object-cover"
                 />
@@ -191,8 +155,6 @@ export default function Home() {
               <div className="relative md:-ml-20 md:mt-16">
                 <Image
                   src={visi_2}
-                  placeholder="blur"
-                  loading="eager"
                   alt="Salad"
                   className="w-[385px] h-[516px] rounded-xl object-cover"
                 />
@@ -208,16 +170,16 @@ export default function Home() {
               <br />
               Semesta.
             </p>
-            <p className="bodymedium font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+            <p className="bodysmall font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
               Menjadikan Usaha Berbasis Syari’at Islam dengan mengedepankan
               ukhuwah Islamiyah serta peduli permasalahan Dakwah, Sosial, dan
               Pendidikan.
             </p>
-            <h3 className="heading3 title font-bold max-w-xl mt-10  tracking-widest leading-10">
+            <h3 className="heading3 title font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               Misi
             </h3>
 
-            <ul className="mt-5 bodymedium flex flex-col gap-2">
+            <ul className="mt-5 bodysmall flex flex-col gap-2">
               <li className="flex gap-2">
                 <CheckCircle size={15} className="shrink-0" /> Membentuk bisnis
                 restoran yang halalan toyyiban dengan cita rasa yang bisa
@@ -242,75 +204,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        {/* end section visi misi */}
-        {/* start section Kemitraan */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full ">
-          <h1 className="title heading3 font-bold mt-10 md:mt-0 tracking-widest leading-10">
-            Kemitraan
-          </h1>
-          <p className="heading1 font-bold mt-1 text-center">
-            <span className="text-chart-5">Ki</span>ta bekerja dengan memberikan
-            yang terbaik.
-          </p>
-
-          <ul className="mt-5 bodymedium flex flex-col gap-2 items-start">
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Berbasis Syariah
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Tidak diperkenankan ber-investasi menggunakan uang pinjaman bank
-              dan sejenisnya.
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Bebas Franchise Fee dan Royality Fee,
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Dalam Sistem Kemitraan kami, diterapkan system bagi hasil Syariah,
-              dimana pembagiannya ditentukan sesuai kesepakatan, seperti contoh
-              30% untuk Manajemen dan 70% untuk Mitra
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Investasi Awal Kemitraan sebesar + 300 Juta-an diluar sewa lokasi
-              (Bukan Harga Paket, tetapi sesuai Nota yang dikeluarkan).
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Luas Bangunan yang dibutuhkan + 100m2 dengan lebar bangunan yang
-              di inginkan minimal 6m, dan ada area untuk parkir.
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Penentuan Lokasi disepakati kedua belah pihak
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Pelaksanaan Operational mengacu kepada SOP, Mitra dan Manajemen
-              bisa menangani secara Bersama dengan aturan dan kebijakan
-              Manajemen.
-            </li>
-            <li className="flex gap-2">
-              <CheckCircle size={15} className="shrink-0" />
-              Sangat Cocok untuk Bisnis Kemitraan sebagai Pasive-income
-            </li>
-          </ul>
-        </div>
-        {/* End section Kemitraan */}
-        {/* start section news blog */}
-        <div className="mt-10  flex flex-col items-center md:mt-[104px]">
-          <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
-            Berita dan Postingan Terbaru
-          </h1>
-          <p className="heading1 font-bold mt-1 text-center">
-            <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
-          </p>
-        </div>
-
-        {/*end section news blog */}
+        {/* End Visi Misi */}
       </section>
       {/* content end */}
     </>
