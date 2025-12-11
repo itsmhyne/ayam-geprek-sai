@@ -123,24 +123,16 @@ export default function Home() {
           <p className="heading1 font-bold mt-1">
             <span className="text-chart-5">Pi</span>lih Kategori Produk
           </p>
-          {/* <Carousel className="mt-10 w-full">
-            <CarouselPrevious className="" />
+          <Carousel className="mt-10">
+            <CarouselPrevious />
             <CarouselContent className="gap-5">
-              <CarouselItem className="w-[312px] h-[364px]">
-                <Image src={category_1} fill alt="category" className="" />
-              </CarouselItem>
-              <CarouselItem className="w-[312px] h-[364px]">
-                <Image src={category_2} fill alt="category" />
-              </CarouselItem>
-              <CarouselItem className="w-[312px] h-[364px]">
-                <Image src={category_3} fill alt="category" />
-              </CarouselItem>
-              <CarouselItem className="w-[312px] h-[364px]">
-                <Image src={category_4} fill alt="category" />
-              </CarouselItem>
+              <Image src={category_1} alt="category" className="" />
+              <Image src={category_2} alt="category" className="" />
+              <Image src={category_3} alt="category" className="" />
+              <Image src={category_4} alt="category" className="" />
             </CarouselContent>
             <CarouselNext />
-          </Carousel> */}
+          </Carousel>
         </div>
         {/* end section kategori makanan */}
         {/* start section visi misi */}

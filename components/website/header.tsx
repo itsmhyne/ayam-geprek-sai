@@ -33,7 +33,11 @@ export default function HeaderWebsite() {
               alt={"logo sai"}
               className="w-10 md:w-16 order-1 "
             />
-            <SidebarTrigger className="order-2 lg:hidden text-white" />
+            <SidebarTrigger
+              className={`order-2 lg:hidden ${
+                isScrolled ? "text-black" : "text-white"
+              }`}
+            />
           </div>
         </div>
       </nav>
