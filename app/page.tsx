@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       {/* hero section start */}
-      <section className="relative w-full h-[371px] md:h-[90vh]">
+      {/* <section className="relative w-full h-[371px] md:h-[90vh]">
         <Image
           src={heroBg}
           alt="Background Hero"
@@ -61,13 +61,13 @@ export default function Home() {
           </div>
           <Image src={hero1} alt={"image"} className="hidden lg:block" />
         </div>
-      </section>
+      </section> */}
       {/* hero section end */}
 
       {/* content start */}
-      <section className="content px-10 lg:max-w-[1070px] mx-auto flex flex-col items-center md:mt-[104px]">
-        {/* start section tentang kami */}
-        <div className="grid gap-10 lg:grid-cols-2">
+      {/* <section className="content px-10 lg:max-w-[1070px] mx-auto flex flex-col items-center md:mt-[104px]"> */}
+      {/* start section tentang kami */}
+      {/* <div className="grid gap-10 lg:grid-cols-2">
           <div className="">
             <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               Tentang Kami
@@ -113,10 +113,10 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
-        {/* end section tentang kami */}
-        {/* start section kategori makanan */}
-        {/* <div className="mt-10 flex flex-col items-center md:mt-[104px]">
+        </div> */}
+      {/* end section tentang kami */}
+      {/* start section kategori makanan */}
+      {/* <div className="mt-10 flex flex-col items-center md:mt-[104px]">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kategori Makanan
           </h1>
@@ -124,13 +124,11 @@ export default function Home() {
             <span className="text-chart-5">Pi</span>lih Kategori Produk
           </p>
         </div> */}
-        {/* end section kategori makanan */}
-        {/* start section visi misi */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-2">
+      {/* end section kategori makanan */}
+      {/* start section visi misi */}
+      {/* <div className="mt-10 grid gap-10 lg:grid-cols-2">
           <section className="relative hidden md:block w-full max-w-[535px] mx-auto py-10">
-            {/* Container utama */}
             <div className="relative flex flex-col md:flex-row items-center md:items-start justify-center gap-6">
-              {/* GAMBAR KIRI */}
               <div className="relative">
                 <Image
                   src={visi_1}
@@ -139,7 +137,6 @@ export default function Home() {
                 />
               </div>
 
-              {/* GAMBAR KANAN (sedikit overlap) */}
               <div className="relative md:-ml-20 md:mt-16">
                 <Image
                   src={visi_2}
@@ -191,10 +188,10 @@ export default function Home() {
               </li>
             </ul>
           </div>
-        </div>
-        {/* end section visi misi */}
-        {/* start section Kemitraan */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
+        </div> */}
+      {/* end section visi misi */}
+      {/* start section Kemitraan */}
+      {/* <div className="mt-10 flex flex-col items-center md:mt-[104px]">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kemitraan
           </h1>
@@ -248,9 +245,9 @@ export default function Home() {
               Sangat Cocok untuk Bisnis Kemitraan sebagai Pasive-income
             </li>
           </ul>
-        </div>
-        {/* End section Kemitraan */}
-      </section>
+        </div> */}
+      {/* End section Kemitraan */}
+      {/* </section> */}
       {/* content end */}
     </>
   );
