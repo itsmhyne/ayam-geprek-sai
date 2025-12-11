@@ -309,39 +309,7 @@ export default function Home() {
             <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
           </p>
         </div>
-        <Carousel className="mt-10">
-          <CarouselPrevious />
-          <CarouselContent className="gap-2 md:gap-5">
-            <div className="flex flex-col w-[392px]">
-              <Image
-                src={category_1}
-                placeholder="blur"
-                loading="eager"
-                alt="category"
-                className="w-full h-[313px]"
-              />
-              <section className="p-5">
-                <div className="flex flex-wrap items-center gap-2.5">
-                  <CalendarClockIcon className="text-chart-5" />
-                  <span className="bodysmall">02 Nov 2025</span>
-                  <MessageCircleMoreIcon className="text-chart-5" />
-                  <span className="bodysmall">Komen (200)</span>
-                </div>
-                <p className="bodylarge font-semibold mt-4">
-                  Lorem ipsum dolor sit amet.
-                </p>
-                <p className="bodysmall font-thin">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                  eum eaque molestiae temporibus rerum enim!
-                </p>
-                <span className="flex">
-                  Selengkapnya <ChevronRight />
-                </span>
-              </section>
-            </div>
-          </CarouselContent>
-          <CarouselNext />
-        </Carousel>
+
         {/*end section news blog */}
       </section>
       {/* content end */}
