@@ -14,10 +14,13 @@ import sawi from "@/public/img/sawi.png";
 import {
   ArrowRightIcon,
   CalendarClock,
+  CalendarClockIcon,
   CheckCircle,
   CheckLine,
   ChevronLeft,
+  ChevronRight,
   MessageCircleIcon,
+  MessageCircleMoreIcon,
 } from "lucide-react";
 import {
   Carousel,
@@ -26,6 +29,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { CarouselDemo } from "@/components/website/Carousel";
 
 export default function Home() {
   return (
@@ -34,6 +38,8 @@ export default function Home() {
       <section className="relative w-full h-[371px] md:h-[90vh]">
         <Image
           src={heroBg}
+          placeholder="blur"
+          loading="eager"
           alt="Background Hero"
           fill
           priority
@@ -42,7 +48,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/40" />
 
-        <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-10 lg:max-w-[1070px] lg:mx-auto">
+        <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-24 w-full lg:mx-auto">
           <div className="flex flex-col gap-2.5">
             <h3 className="heading3 title font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               Motto Kami
@@ -52,7 +58,7 @@ export default function Home() {
               <br />
               Kesederhanaan.
             </p>
-            <p className="bodysmall font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6 text-white">
+            <p className="bodymedium font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6 text-white">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               <br />
               Libero, ab quos. Quae eveniet rerum perspiciatis mollitia dolorem
@@ -65,7 +71,7 @@ export default function Home() {
       {/* hero section end */}
 
       {/* content start */}
-      <section className="content px-10 lg:max-w-[1070px] mx-auto flex flex-col items-center md:mt-[104px]">
+      <section className="content px-24 w-full mx-auto flex flex-col items-center md:mt-[104px] ">
         {/* start section tentang kami */}
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="">
@@ -77,7 +83,7 @@ export default function Home() {
               <br />
               Makanan Terbaik.
             </p>
-            <p className="bodysmall font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+            <p className="bodymedium font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
               Sa’i berarti ikhtiar. Kata Sa’i seakar dengan kata dasar Sa’a yang
               berarti usaha. Secara filosofi peristiwa menggambarkan seorang ibu
               yang gigih berusaha keras mencari air guna memberi minum anaknya
@@ -87,10 +93,12 @@ export default function Home() {
               Selengkapnya..
             </button>
           </div>
-          <div className="grid grid-cols-2 gap-4 mt-5 lg:mt-0">
+          <div className="grid grid-cols-2 gap-2 md:gap-4 mt-5 lg:mt-0">
             <div className="relative col-span-2 row-span-2 h-[200px] md:h-[200px]">
               <Image
                 src={food_1}
+                placeholder="blur"
+                loading="eager"
                 alt="Background Hero"
                 fill
                 className="object-cover rounded-xl"
@@ -99,6 +107,8 @@ export default function Home() {
             <div className="relative h-[100px] md:h-[200px]">
               <Image
                 src={food_2}
+                placeholder="blur"
+                loading="eager"
                 alt="Background Hero"
                 fill
                 className="object-cover rounded-xl"
@@ -107,6 +117,8 @@ export default function Home() {
             <div className="relative h-[100px] md:h-[200px]">
               <Image
                 src={food_3}
+                placeholder="blur"
+                loading="eager"
                 alt="Background Hero"
                 fill
                 className="object-cover rounded-xl"
@@ -116,7 +128,7 @@ export default function Home() {
         </div>
         {/* end section tentang kami */}
         {/* start section kategori makanan */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
+        <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kategori Makanan
           </h1>
@@ -125,18 +137,42 @@ export default function Home() {
           </p>
           <Carousel className="mt-10">
             <CarouselPrevious />
-            <CarouselContent className="gap-5">
-              <Image src={category_1} alt="category" className="" />
-              <Image src={category_2} alt="category" className="" />
-              <Image src={category_3} alt="category" className="" />
-              <Image src={category_4} alt="category" className="" />
+            <CarouselContent className="gap-2 md:gap-5">
+              <Image
+                src={category_1}
+                placeholder="blur"
+                loading="eager"
+                alt="category"
+                className=""
+              />
+              <Image
+                src={category_2}
+                placeholder="blur"
+                loading="eager"
+                alt="category"
+                className=""
+              />
+              <Image
+                src={category_3}
+                placeholder="blur"
+                loading="eager"
+                alt="category"
+                className=""
+              />
+              <Image
+                src={category_4}
+                placeholder="blur"
+                loading="eager"
+                alt="category"
+                className=""
+              />
             </CarouselContent>
             <CarouselNext />
           </Carousel>
         </div>
         {/* end section kategori makanan */}
         {/* start section visi misi */}
-        <div className="mt-10 grid gap-10 lg:grid-cols-2">
+        <div className="mt-10 grid gap-10 lg:grid-cols-2 md:mt-[104px] w-full">
           <section className="relative hidden md:block w-full max-w-[535px] mx-auto py-10">
             {/* Container utama */}
             <div className="relative flex flex-col md:flex-row items-center md:items-start justify-center gap-6">
@@ -144,6 +180,8 @@ export default function Home() {
               <div className="relative">
                 <Image
                   src={visi_1}
+                  placeholder="blur"
+                  loading="eager"
                   alt="Cutting food"
                   className="w-[424px] h-[523px]  rounded-xl object-cover"
                 />
@@ -153,6 +191,8 @@ export default function Home() {
               <div className="relative md:-ml-20 md:mt-16">
                 <Image
                   src={visi_2}
+                  placeholder="blur"
+                  loading="eager"
                   alt="Salad"
                   className="w-[385px] h-[516px] rounded-xl object-cover"
                 />
@@ -168,16 +208,16 @@ export default function Home() {
               <br />
               Semesta.
             </p>
-            <p className="bodysmall font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
+            <p className="bodymedium font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6">
               Menjadikan Usaha Berbasis Syari’at Islam dengan mengedepankan
               ukhuwah Islamiyah serta peduli permasalahan Dakwah, Sosial, dan
               Pendidikan.
             </p>
-            <h3 className="heading3 title font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+            <h3 className="heading3 title font-bold max-w-xl mt-10  tracking-widest leading-10">
               Misi
             </h3>
 
-            <ul className="mt-5 bodysmall flex flex-col gap-2">
+            <ul className="mt-5 bodymedium flex flex-col gap-2">
               <li className="flex gap-2">
                 <CheckCircle size={15} className="shrink-0" /> Membentuk bisnis
                 restoran yang halalan toyyiban dengan cita rasa yang bisa
@@ -204,8 +244,8 @@ export default function Home() {
         </div>
         {/* end section visi misi */}
         {/* start section Kemitraan */}
-        <div className="mt-10 flex flex-col items-center md:mt-[104px]">
-          <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+        <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full ">
+          <h1 className="title heading3 font-bold mt-10 md:mt-0 tracking-widest leading-10">
             Kemitraan
           </h1>
           <p className="heading1 font-bold mt-1 text-center">
@@ -213,7 +253,7 @@ export default function Home() {
             yang terbaik.
           </p>
 
-          <ul className="mt-5 bodysmall flex flex-col gap-2">
+          <ul className="mt-5 bodymedium flex flex-col gap-2 items-start">
             <li className="flex gap-2">
               <CheckCircle size={15} className="shrink-0" />
               Berbasis Syariah
@@ -260,6 +300,49 @@ export default function Home() {
           </ul>
         </div>
         {/* End section Kemitraan */}
+        {/* start section news blog */}
+        <div className="mt-10  flex flex-col items-center md:mt-[104px]">
+          <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
+            Berita dan Postingan Terbaru
+          </h1>
+          <p className="heading1 font-bold mt-1 text-center">
+            <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
+          </p>
+        </div>
+        <Carousel className="mt-10">
+          <CarouselPrevious />
+          <CarouselContent className="gap-2 md:gap-5">
+            <div className="flex flex-col w-[392px]">
+              <Image
+                src={category_1}
+                placeholder="blur"
+                loading="eager"
+                alt="category"
+                className="w-full h-[313px]"
+              />
+              <section className="p-5">
+                <div className="flex flex-wrap items-center gap-2.5">
+                  <CalendarClockIcon className="text-chart-5" />
+                  <span className="bodysmall">02 Nov 2025</span>
+                  <MessageCircleMoreIcon className="text-chart-5" />
+                  <span className="bodysmall">Komen (200)</span>
+                </div>
+                <p className="bodylarge font-semibold mt-4">
+                  Lorem ipsum dolor sit amet.
+                </p>
+                <p className="bodysmall font-thin">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  eum eaque molestiae temporibus rerum enim!
+                </p>
+                <span className="flex">
+                  Selengkapnya <ChevronRight />
+                </span>
+              </section>
+            </div>
+          </CarouselContent>
+          <CarouselNext />
+        </Carousel>
+        {/*end section news blog */}
       </section>
       {/* content end */}
     </>
