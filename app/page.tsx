@@ -124,7 +124,7 @@ export default function Home() {
         </div>
         {/* end section tentang kami */}
         {/* start section kategori makanan */}
-        {/* <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full bg-green-700">
+        <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Kategori Makanan
           </h1>
@@ -132,36 +132,47 @@ export default function Home() {
             <span className="text-chart-5">Pi</span>lih Kategori Produk
           </p>
           <Carousel className="mt-10">
-            <CarouselPrevious />
-            <CarouselContent className="gap-2 md:gap-5">
-              <Image
-                src={category_1}
-                placeholder="blur"
-                alt="category"
-                className=""
-              />
-              <Image
-                src={category_2}
-                placeholder="blur"
-                alt="category"
-                className=""
-              />
-              <Image
-                src={category_3}
-                placeholder="blur"
-                alt="category"
-                className=""
-              />
-              <Image
-                src={category_4}
-                placeholder="blur"
-                alt="category"
-                className=""
-              />
+            {/* <CarouselPrevious />
+
+            <CarouselNext /> */}
+            <CarouselContent className="gap-2 md:gap-5 overflow-hidden">
+              <CarouselItem className="basis-[100px] flex-none">
+                <Image
+                  src={category_1}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+              </CarouselItem>
+              <CarouselItem className="basis-[100px] flex-none">
+                <Image
+                  src={category_2}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+              </CarouselItem>
+              <CarouselItem className="basis-[100px] flex-none">
+                <Image
+                  src={category_3}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+              </CarouselItem>
+              <CarouselItem className="basis-[100px] flex-none">
+                <Image
+                  src={category_4}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+              </CarouselItem>
             </CarouselContent>
-            <CarouselNext />
+            <CarouselPrevious className="left-2 top-1/2 -translate-y-1/2" />
+            <CarouselNext className="right-2 top-1/2 -translate-y-1/2" />
           </Carousel>
-        </div> */}
+        </div>
         {/* end section kategori makanan */}
         {/* start section visi misi */}
         {/* <div className="mt-10 grid gap-10 lg:grid-cols-2 md:mt-[104px] w-full">
