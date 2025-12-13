@@ -39,7 +39,6 @@ export default function Home() {
         <Image
           src={heroBg}
           placeholder="blur"
-          loading="eager"
           alt="Background Hero"
           fill
           priority
@@ -98,30 +97,27 @@ export default function Home() {
               <Image
                 src={food_1}
                 placeholder="blur"
-                loading="eager"
                 alt="Background Hero"
                 fill
-                className="object-cover rounded-xl"
+                className="rounded-xl"
               />
             </div>
             <div className="relative h-[100px] md:h-[200px]">
               <Image
                 src={food_2}
                 placeholder="blur"
-                loading="eager"
                 alt="Background Hero"
                 fill
-                className="object-cover rounded-xl"
+                className="rounded-xl"
               />
             </div>
             <div className="relative h-[100px] md:h-[200px]">
               <Image
                 src={food_3}
                 placeholder="blur"
-                loading="eager"
                 alt="Background Hero"
                 fill
-                className="object-cover rounded-xl"
+                className="rounded-xl"
               />
             </div>
           </div>
@@ -141,28 +137,24 @@ export default function Home() {
               <Image
                 src={category_1}
                 placeholder="blur"
-                loading="eager"
                 alt="category"
                 className=""
               />
               <Image
                 src={category_2}
                 placeholder="blur"
-                loading="eager"
                 alt="category"
                 className=""
               />
               <Image
                 src={category_3}
                 placeholder="blur"
-                loading="eager"
                 alt="category"
                 className=""
               />
               <Image
                 src={category_4}
                 placeholder="blur"
-                loading="eager"
                 alt="category"
                 className=""
               />
@@ -179,7 +171,6 @@ export default function Home() {
                 <Image
                   src={visi_1}
                   placeholder="blur"
-                  loading="eager"
                   alt="Cutting food"
                   className="w-[424px] h-[523px]  rounded-xl object-cover"
                 />
@@ -189,7 +180,6 @@ export default function Home() {
                 <Image
                   src={visi_2}
                   placeholder="blur"
-                  loading="eager"
                   alt="Salad"
                   className="w-[385px] h-[516px] rounded-xl object-cover"
                 />
