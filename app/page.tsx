@@ -70,7 +70,7 @@ export default function Home() {
       {/* hero section end */}
 
       {/* content start */}
-      <section className="content px-4 md:px-10 lg:px-24 w-full mx-auto flex flex-col items-center md:mt-[104px] bg-amber-400">
+      <section className="content px-4 md:px-10 lg:px-24 w-full mx-auto flex flex-col items-center md:mt-[104px] ">
         {/* start section tentang kami */}
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="">
@@ -135,47 +135,61 @@ export default function Home() {
             {/* <CarouselPrevious />
 
             <CarouselNext /> */}
-            <CarouselContent className="gap-2 md:gap-5 overflow-hidden">
-              <CarouselItem className="basis-[100px] flex-none">
+            <CarouselContent className="gap-2 md:gap-5">
+              <CarouselItem className="flex-none">
                 <Image
                   src={category_1}
                   placeholder="blur"
                   alt="category"
                   className=""
                 />
+                <div className="flex flex-col items-center mt-2.5">
+                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <small className="bodysmall font-thin">10 Items</small>
+                </div>
               </CarouselItem>
-              <CarouselItem className="basis-[100px] flex-none">
+              <CarouselItem className="flex-none">
                 <Image
                   src={category_2}
                   placeholder="blur"
                   alt="category"
                   className=""
                 />
+                <div className="flex flex-col items-center mt-2.5">
+                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <small className="bodysmall font-thin">10 Items</small>
+                </div>
               </CarouselItem>
-              <CarouselItem className="basis-[100px] flex-none">
+              <CarouselItem className="flex-none">
                 <Image
                   src={category_3}
                   placeholder="blur"
                   alt="category"
                   className=""
                 />
+                <div className="flex flex-col items-center mt-2.5">
+                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <small className="bodysmall font-thin">10 Items</small>
+                </div>
               </CarouselItem>
-              <CarouselItem className="basis-[100px] flex-none">
+              <CarouselItem className="flex-none">
                 <Image
                   src={category_4}
                   placeholder="blur"
                   alt="category"
                   className=""
                 />
+                <div className="flex flex-col items-center mt-2.5">
+                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <small className="bodysmall font-thin">10 Items</small>
+                </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="left-2 top-1/2 -translate-y-1/2" />
-            <CarouselNext className="right-2 top-1/2 -translate-y-1/2" />
           </Carousel>
         </div>
         {/* end section kategori makanan */}
         {/* start section visi misi */}
-        {/* <div className="mt-10 grid gap-10 lg:grid-cols-2 md:mt-[104px] w-full">
+        <div className="mt-10 grid gap-10 lg:grid-cols-2 md:mt-[104px] w-full">
           <section className="relative hidden md:block w-full max-w-[535px] mx-auto py-10">
             <div className="relative flex flex-col md:flex-row items-center md:items-start justify-center gap-6">
               <div className="relative">
@@ -239,10 +253,10 @@ export default function Home() {
               </li>
             </ul>
           </div>
-        </div> */}
+        </div>
         {/* end section visi misi */}
         {/* start section Kemitraan */}
-        {/* <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full ">
+        <div className="mt-10 flex flex-col items-center md:mt-[104px] w-full ">
           <h1 className="title heading3 font-bold mt-10 md:mt-0 tracking-widest leading-10">
             Kemitraan
           </h1>
@@ -296,17 +310,17 @@ export default function Home() {
               Sangat Cocok untuk Bisnis Kemitraan sebagai Pasive-income
             </li>
           </ul>
-        </div> */}
+        </div>
         {/* End section Kemitraan */}
         {/* start section news blog */}
-        {/* <div className="mt-10  flex flex-col items-center md:mt-[104px] bg-blue-800">
+        <div className="mt-10  flex flex-col items-center md:mt-[104px] ">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Berita dan Postingan Terbaru
           </h1>
           <p className="heading1 font-bold mt-1 text-center">
             <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
           </p>
-        </div> */}
+        </div>
 
         {/*end section news blog */}
       </section>
