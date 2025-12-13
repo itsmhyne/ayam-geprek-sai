@@ -132,9 +132,9 @@ export default function Home() {
             <span className="text-chart-5">Pi</span>lih Kategori Produk
           </p>
           <Carousel className="mt-10">
-            {/* <CarouselPrevious />
+            <CarouselPrevious className="hidden lg:block text-black" />
 
-            <CarouselNext /> */}
+            <CarouselNext className="hidden lg:block text-black" />
             <CarouselContent className="gap-2 md:gap-5">
               <CarouselItem className="flex-none">
                 <Image
@@ -144,7 +144,9 @@ export default function Home() {
                   className=""
                 />
                 <div className="flex flex-col items-center mt-2.5">
-                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <span className="bodymedium font-semibold">
+                    Lorem, ipsum.
+                  </span>
                   <small className="bodysmall font-thin">10 Items</small>
                 </div>
               </CarouselItem>
@@ -156,7 +158,9 @@ export default function Home() {
                   className=""
                 />
                 <div className="flex flex-col items-center mt-2.5">
-                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <span className="bodymedium font-semibold">
+                    Lorem, ipsum.
+                  </span>
                   <small className="bodysmall font-thin">10 Items</small>
                 </div>
               </CarouselItem>
@@ -168,7 +172,9 @@ export default function Home() {
                   className=""
                 />
                 <div className="flex flex-col items-center mt-2.5">
-                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <span className="bodymedium font-semibold">
+                    Lorem, ipsum.
+                  </span>
                   <small className="bodysmall font-thin">10 Items</small>
                 </div>
               </CarouselItem>
@@ -180,7 +186,9 @@ export default function Home() {
                   className=""
                 />
                 <div className="flex flex-col items-center mt-2.5">
-                  <span className="bodymedium font-medium">Lorem, ipsum.</span>
+                  <span className="bodymedium font-semibold">
+                    Lorem, ipsum.
+                  </span>
                   <small className="bodysmall font-thin">10 Items</small>
                 </div>
               </CarouselItem>
