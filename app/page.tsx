@@ -323,14 +323,14 @@ export default function Home() {
         </div>
         {/* End section Kemitraan */}
         {/* start section news blog */}
-        <div className="mt-10  flex flex-col items-center md:mt-[104px] ">
+        <div className="mt-10  flex flex-col items-center md:mt-[104px] w-full">
           <h1 className="title heading3 font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
             Berita dan Postingan Terbaru
           </h1>
           <p className="heading1 font-bold mt-1 text-center">
             <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
           </p>
-          <Carousel className="mt-10">
+          <Carousel className="mt-10 overflow-hidden md:overflow-visible w-screen">
             <CarouselPrevious className="hidden lg:block text-black" />
 
             <CarouselNext className="hidden lg:block text-black" />
