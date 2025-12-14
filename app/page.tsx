@@ -19,7 +19,9 @@ import {
   CheckLine,
   ChevronLeft,
   ChevronRight,
+  HistoryIcon,
   MessageCircleIcon,
+  MessageCircleMore,
   MessageCircleMoreIcon,
 } from "lucide-react";
 import {
@@ -328,6 +330,125 @@ export default function Home() {
           <p className="heading1 font-bold mt-1 text-center">
             <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
           </p>
+          <Carousel className="mt-10">
+            <CarouselPrevious className="hidden lg:block text-black" />
+
+            <CarouselNext className="hidden lg:block text-black" />
+            <CarouselContent className="gap-2 md:gap-5">
+              <CarouselItem className="flex-none">
+                <Image
+                  src={category_1}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+                <div className="flex flex-col mt-2.5 gap-2.5">
+                  <div className="bodymedium font-semibold flex justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <HistoryIcon className="text-chart-5" />
+                      <p className="bodysmall">02 Nov 2025</p>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <MessageCircleMore className="text-chart-5" />
+                      <p className="bodysmall">100 (Komentar)</p>
+                    </div>
+                  </div>
+                  <h3 className="bodylarge font-medium">
+                    Lorem ipsum dolor sit.
+                  </h3>
+                  <p className="bodymedium">Lorem ipsum dolor, sit amet</p>
+                  <div className="flex gap-2.5 text-chart-5">
+                    <span>Selengkapnya</span>
+                    <ChevronRight />
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="flex-none">
+                <Image
+                  src={category_2}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+                <div className="flex flex-col mt-2.5 gap-2.5">
+                  <div className="bodymedium font-semibold flex justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <HistoryIcon className="text-chart-5" />
+                      <p className="bodysmall">02 Nov 2025</p>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <MessageCircleMore className="text-chart-5" />
+                      <p className="bodysmall">100 (Komentar)</p>
+                    </div>
+                  </div>
+                  <h3 className="bodylarge font-medium">
+                    Lorem ipsum dolor sit.
+                  </h3>
+                  <p className="bodymedium">Lorem ipsum dolor, sit amet</p>
+                  <div className="flex gap-2.5 text-chart-5">
+                    <span>Selengkapnya</span>
+                    <ChevronRight />
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="flex-none">
+                <Image
+                  src={category_3}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+                <div className="flex flex-col mt-2.5 gap-2.5">
+                  <div className="bodymedium font-semibold flex justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <HistoryIcon className="text-chart-5" />
+                      <p className="bodysmall">02 Nov 2025</p>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <MessageCircleMore className="text-chart-5" />
+                      <p className="bodysmall">100 (Komentar)</p>
+                    </div>
+                  </div>
+                  <h3 className="bodylarge font-medium">
+                    Lorem ipsum dolor sit.
+                  </h3>
+                  <p className="bodymedium">Lorem ipsum dolor, sit amet</p>
+                  <div className="flex gap-2.5 text-chart-5">
+                    <span>Selengkapnya</span>
+                    <ChevronRight />
+                  </div>
+                </div>
+              </CarouselItem>
+              <CarouselItem className="flex-none">
+                <Image
+                  src={category_4}
+                  placeholder="blur"
+                  alt="category"
+                  className=""
+                />
+                <div className="flex flex-col mt-2.5 gap-2.5">
+                  <div className="bodymedium font-semibold flex justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <HistoryIcon className="text-chart-5" />
+                      <p className="bodysmall">02 Nov 2025</p>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <MessageCircleMore className="text-chart-5" />
+                      <p className="bodysmall">100 (Komentar)</p>
+                    </div>
+                  </div>
+                  <h3 className="bodylarge font-medium">
+                    Lorem ipsum dolor sit.
+                  </h3>
+                  <p className="bodymedium">Lorem ipsum dolor, sit amet</p>
+                  <div className="flex gap-2.5 text-chart-5">
+                    <span>Selengkapnya</span>
+                    <ChevronRight />
+                  </div>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+          </Carousel>
         </div>
 
         {/*end section news blog */}
