@@ -21,12 +21,12 @@ export default function HeaderWebsite() {
   return (
     <>
       <nav
-        className={`py-8 px-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        className={`py-4 px-4 fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled ? "bg-white shadow-sm" : "bg-white"
         }`}
       >
         <div className="container">
-          <div className="menu flex justify-evenly items-center">
+          <div className="menu flex justify-between items-center">
             <Image
               src={logo}
               alt={"logo sai"}
@@ -37,9 +37,7 @@ export default function HeaderWebsite() {
                 isScrolled ? "text-black" : "text-white"
               }`}
             />
-            <div className="hidden lg:block order-2">
-              <WebsiteHeader />
-            </div>
+            <WebsiteHeader />
           </div>
         </div>
       </nav>

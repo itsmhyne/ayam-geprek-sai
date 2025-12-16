@@ -1,0 +1,35 @@
+{
+  "menu": [
+    { "id": "1", "name": "Beranda", "sub": [] },
+    {
+      "id": "2",
+      "name": "Pesantren Kuliner",
+      "sub": [
+        { "id": "2.1", "name": "PT. UBS" },
+        { "id": "2.2", "name": "Kajian" },
+        { "id": "2.3", "name": "Gallery" },
+        { "id": "2.4", "name": "Aqidah" },
+        { "id": "2.5", "name": "Akhlak" },
+        { "id": "2.6", "name": "Kitab Thaharah" },
+        { "id": "2.7", "name": "Kitab Shalat" },
+        { "id": "2.8", "name": "Kitab Puasa" },
+        { "id": "2.9", "name": "Doa-Doa Harian" },
+        { "id": "2.0", "name": "Asmaul Husna" }
+      ]
+    },
+    { "id": "3", "name": "Menu Kami", "sub": [] },
+    {
+      "id": "4",
+      "name": "Aktivitas Store",
+      "sub": [
+        { "id": "4.1", "name": "Gallery Event" },
+        { "id": "4.2", "name": "Gallery Promo & LSM" }
+      ]
+    },
+    { "id": "5", "name": "Pengembangan SDM", "sub": [] },
+    { "id": "6", "name": "Outlet Kami", "sub": [] },
+    { "id": "7", "name": "Karir", "sub": [] },
+    { "id": "8", "name": "Blog", "sub": [] },
+    { "id": "9", "name": "Kontak", "sub": [] }
+  ]
+}
