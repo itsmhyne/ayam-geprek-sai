@@ -37,29 +37,27 @@ export default function Home() {
   return (
     <>
       {/* hero section start */}
-      <section className="relative w-full h-[371px] md:h-[90vh]">
-        <Image
+      <section className="relative w-full h-[371px] md:h-[90vh] lg:h-screen">
+        {/* <Image
           src={heroBg}
           placeholder="blur"
           alt="Background Hero"
           fill
           priority
           className="object-cover"
-        />
+        /> */}
 
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center px-4 md:px-10 lg:px-24 w-full lg:mx-auto">
+        <div className="relative z-10 grid grid-cols-1 items-center md:grid-cols-2 h-full justify-center w-full lg:mx-auto">
           <div className="flex flex-col gap-2.5">
             <h3 className="heading3 title font-bold max-w-xl mt-10 md:mt-0 tracking-widest leading-10">
               Motto Kami
             </h3>
-            <p className="heading1 font-bold mt-1 text-white">
+            <p className="heading1 font-bold mt-1 ">
               <span className="text-chart-5">Ke</span>nikmatan dalam
               <br />
               Kesederhanaan.
             </p>
-            <p className="bodymedium font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6 text-white">
+            <p className="bodymedium font-thin mt-4 leading-2.5 md:leading-4 lg:leading-6 ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               <br />
               Libero, ab quos. Quae eveniet rerum perspiciatis mollitia dolorem
@@ -72,7 +70,7 @@ export default function Home() {
       {/* hero section end */}
 
       {/* content start */}
-      <section className="content px-4 md:px-10 lg:px-24 w-full mx-auto flex flex-col items-center md:mt-[104px] ">
+      <section className="content  w-full mx-auto flex flex-col items-center md:mt-[104px] ">
         {/* start section tentang kami */}
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="">
@@ -226,7 +224,7 @@ export default function Home() {
               Visi
             </h3>
             <p className="heading1 font-bold mt-1">
-              <span className="text-chart-5">PT.</span>Ukhuwah Berkah
+              <span className="text-chart-5">PT.</span> Ukhuwah Berkah
               <br />
               Semesta.
             </p>
@@ -330,7 +328,7 @@ export default function Home() {
           <p className="heading1 font-bold mt-1 text-center">
             <span className="text-chart-5">Ku</span>njungi halaman terbaru kami
           </p>
-          <Carousel className="mt-10 overflow-hidden md:overflow-visible w-screen">
+          {/* <Carousel className="mt-10 overflow-hidden md:overflow-visible w-screen px-4">
             <CarouselPrevious className="hidden lg:block text-black" />
 
             <CarouselNext className="hidden lg:block text-black" />
@@ -448,7 +446,7 @@ export default function Home() {
                 </div>
               </CarouselItem>
             </CarouselContent>
-          </Carousel>
+          </Carousel> */}
         </div>
 
         {/*end section news blog */}

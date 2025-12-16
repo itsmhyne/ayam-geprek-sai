@@ -5,6 +5,7 @@ import HeaderWebsite from "@/components/website/header";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/website/AppSidebar";
 import Footer from "@/components/website/Footer";
+import { Angry, ScanFace, Smile } from "lucide-react";
 
 const robotoSans = Inter({
   variable: "--font-roboto-sans",
@@ -40,15 +41,29 @@ export default function RootLayout({
         className={`${robotoSans.className} ${spaceMono.className} ${greatVibes.variable} antialiased`}
       >
         <SidebarProvider className="flex gap-[2%] flex-wrap content-start">
-          <div className="w-full h-[5%]">
+          <div className="w-full h-[5%] px-4 md:px-10 lg:px-24">
             <HeaderWebsite />
           </div>
           <div className="w-1/4 h-3/4 z-50 lg:hidden">
             <AppSidebar />
           </div>
-          <div className="grow h-3/4 w-full ">{children}</div>
-          <div className="w-full h-[5%]">
+          <div className="grow h-3/4 w-full px-4 md:px-10 lg:px-24">
+            {children}
+          </div>
+          <div className="w-full h-[5%] px-4 md:px-10 lg:px-24">
             <Footer />
+          </div>
+          <div className="baseline bg-chart-5 w-full py-4 px-4 md:px-10 lg:px-24">
+            <div className="content mx-auto flex justify-between items-center">
+              <p className="copyright  bodysmall">
+                Copyrigt &copy; by M. Hamdan Yusuf. All Rights Reserved.
+              </p>
+              <div className="sosmed flex gap-1.5">
+                <Smile className="bg-white p-1 rounded-sm" />
+                <Angry className="bg-white p-1 rounded-sm" />
+                <ScanFace className="bg-white p-1 rounded-sm" />
+              </div>
+            </div>
           </div>
         </SidebarProvider>
       </body>

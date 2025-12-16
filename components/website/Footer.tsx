@@ -10,7 +10,7 @@ import post3 from "@/public/post/post-3.png";
 export default function Footer() {
   return (
     <>
-      <div className="bottom-0 left-0 right-0 px-4 md:px-10 lg:px-24 lg:w-[1320px] mt-10 my-10 mx-auto ">
+      <div className="bottom-0 left-0 right-0 mt-10 my-10 mx-auto ">
         <div className="email grid grid-cols-1 md:grid-flow-col md:grid-rows-2 md:row-start-1 md:row-end-2">
           <p className=" heading3 font-bold mt-1">
             <span className="text-chart-5">Ka</span>mi membutuhkan dukungan anda
@@ -23,7 +23,7 @@ export default function Footer() {
             <Input
               type="email"
               placeholder="Masukkan email anda"
-              className="bg-chart-5  inputtext placeholder: font-medium"
+              className="bg-chart-5  inputtext placeholder:font-medium placeholder:text-white"
             />
             <Button
               variant="outline"
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="useful-links py-2.5 md:py-0">
-            <h4 className="bodylarge">Useful Links</h4>
+            <h4 className="bodylarge">Link Terkait</h4>
             <ul className="bodysmall mt-2.5 gap-5 grid grid-rows-2 md:grid-cols-1">
               <li>Menu Kami</li>
               <li>Outlet Kami</li>
@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
           {/* help section */}
           <div className="help py-2.5 md:py-0">
-            <h4 className="bodylarge">Help?</h4>
+            <h4 className="bodylarge">Bantuan?</h4>
             <ul className="bodysmall mt-2.5 gap-5 grid grid-rows-2 md:grid-cols-1">
               <li>FAQ</li>
               <li>Terms & Condition</li>
@@ -83,8 +83,12 @@ export default function Footer() {
           {/* end help section */}
           {/* recent post section */}
           <div className=" py-2.5 md:py-0">
-            <h4 className="bodylarge">Recent Post</h4>
-            <ul className="bodysmall mt-2.5 gap-5 grid grid-cols-1">
+            <h4 className="bodylarge">Hubungi Kami</h4>
+            <ul className="bodysmall mt-2.5 gap-5">
+              <li>Hotline Kemitraan: 0813-3500-5331</li>
+              <li>Hotline Kritik & Saran: 0812-2766-518</li>
+            </ul>
+            {/* <ul className="bodysmall mt-2.5 gap-5 grid grid-cols-1">
               <li className="flex items-center gap-2.5">
                 <div className="image">
                   <Image src={post1} alt={"post image"} />
@@ -112,22 +116,10 @@ export default function Footer() {
                   <span className="bodysmall">Lorem ipsum dolor sit.</span>
                 </div>
               </li>
-            </ul>
+            </ul> */}
           </div>
           {/* end recent post section */}
         </section>
-      </div>
-      <div className="baseline bg-chart-5 w-full px-4 py-4">
-        <div className="content lg:w-[1320px] mx-auto flex justify-between items-center">
-          <p className="copyright  bodysmall">
-            Copyrigt &copy; by M. Hamdan Yusuf. All Rights Reserved.
-          </p>
-          <div className="sosmed flex gap-1.5">
-            <Smile className="bg-white p-1 rounded-sm" />
-            <Angry className="bg-white p-1 rounded-sm" />
-            <ScanFace className="bg-white p-1 rounded-sm" />
-          </div>
-        </div>
       </div>
     </>
   );
